@@ -425,7 +425,7 @@
             "apiVersion": "2022-09-01",
             "name": "[variables('deploymentNames').AMBAUserAssignedManagedIdentityDeploymentName]",
             "subscriptionId": "[parameters('managementSubscriptionId')]",
-            "location": "eastus",
+            "location": "[deployment().location]",
             "dependsOn": [
                 "[variables('deploymentNames').AMBAResourceGroupDeploymentName]"
             ],
@@ -440,7 +440,7 @@
                         "value": "[parameters('userAssignedManagedIdentityName')]"
                     },
                     "uamiLocation": {
-                        "value": "eastus"
+                        "value": "[parameters('ALZMonitorResourceGroupLocation')]"
                     },
                     "uamiResourceGroupName": {
                         "value": "[parameters('ALZMonitorResourceGroupName')]"
