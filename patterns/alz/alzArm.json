@@ -166,7 +166,7 @@
         },
         "ALZMonitorResourceGroupLocation": {
             "type": "string",
-            "defaultValue": "northeurope",
+            "defaultValue": "eastus",
             "metadata": {
                 "description": "Provide the location of the resource group for Azure Monitor Baseline Alerts."
             }
@@ -425,7 +425,7 @@
             "apiVersion": "2022-09-01",
             "name": "[variables('deploymentNames').AMBAUserAssignedManagedIdentityDeploymentName]",
             "subscriptionId": "[parameters('managementSubscriptionId')]",
-            "location": "[deployment().location]",
+            "location": "eastus",
             "dependsOn": [
                 "[variables('deploymentNames').AMBAResourceGroupDeploymentName]"
             ],
@@ -444,6 +444,9 @@
                     },
                     "uamiResourceGroupName": {
                         "value": "[parameters('ALZMonitorResourceGroupName')]"
+                    },
+                    "location": {
+                        "value" : "[parameters('ALZMonitorResourceGroupLocation')]"
                     }
                 }
             }
