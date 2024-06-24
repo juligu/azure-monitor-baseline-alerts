@@ -440,13 +440,10 @@
                         "value": "[parameters('userAssignedManagedIdentityName')]"
                     },
                     "uamiLocation": {
-                        "value": "[parameters('ALZMonitorResourceGroupLocation')]"
+                        "value": "eastus"
                     },
                     "uamiResourceGroupName": {
                         "value": "[parameters('ALZMonitorResourceGroupName')]"
-                    },
-                    "location": {
-                        "value" : "[parameters('ALZMonitorResourceGroupLocation')]"
                     }
                 }
             }
