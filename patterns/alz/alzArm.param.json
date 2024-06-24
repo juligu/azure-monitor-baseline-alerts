@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "contoso"
+      "value": "julioguzmanoutlook554"
     },
     "platformManagementGroup": {
-      "value": "contoso-platform"
+      "value": "0e2e984b-8690-4a5c-9027-2a3306f42481"
     },
     "IdentityManagementGroup": {
-      "value": "contoso-identity"
+      "value": "0e2e984b-8690-4a5c-9027-2a3306f42481"
     },
     "managementManagementGroup": {
-      "value": "contoso-management"
+      "value": "0e2e984b-8690-4a5c-9027-2a3306f42481"
     },
     "connectivityManagementGroup": {
-      "value": "contoso-connectivity"
+      "value": "0e2e984b-8690-4a5c-9027-2a3306f42481"
     },
     "LandingZoneManagementGroup": {
-      "value": "contoso-landingzones"
+      "value": "0e2e984b-8690-4a5c-9027-2a3306f42481"
     },
     "enableAMBAConnectivity": {
       "value": "Yes"
@@ -68,7 +68,7 @@
       }
     },
     "ALZMonitorActionGroupEmail": {
-      "value": ""
+      "value": "juligu@microsoft.com"
     },
     "ALZLogicappResourceId": {
       "value": ""
